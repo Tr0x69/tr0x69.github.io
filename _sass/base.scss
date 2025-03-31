@@ -1,21 +1,44 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
 /**
  * Style variables
  */
-$base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
+$base-font-family:     'Roboto Mono', monospace !default;
+$base-font-size:       16px !default;
 $mobile-font-size:     12px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
-$container-max-width:  600px !default;
+$container-max-width:  900px !default;
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+  }
+  
+  /* For images that need to be centered */
+  .center-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* For responsive image containers */
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
 /**
  * Global
  */
-body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
-h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
+ body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
+ h1 { font-size: $base-font-size * 1.6;  margin: 0px;  margin-top: 30px;  font-weight: bold;  color: var(--text-color); }
+ h2 { font-size: $base-font-size * 1.4;  margin: 0px;  margin-top: 28px;  font-weight: bold;  color: var(--text-color); }
+ h3 { font-size: $base-font-size * 1.2;  margin: 0px;  margin-top: 26px;  font-weight: bold;  color: var(--text-color); }
+ h4, h5, h6 { font-size: $base-font-size * 1.1;  margin: 0px;  margin-top: 24px;  font-weight: bold;  color: var(--text-color); }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
@@ -30,6 +53,18 @@ footer { color: var(--text-color);  border-top: var(--border);  margin: 20px aut
 header { margin-top: 25px;  margin-bottom: 10px; }
 header p { text-align: left;  margin: 0; }
 footer { margin-bottom: 20px; }
+
+
+
+code.highlighter-rouge {
+    background-color: #334036;
+    padding: 0.1em 0.2em;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-family: $base-font-family;
+    border: 1px solid rgba(126, 242, 176, 0.3);
+    color: #7EF2B0;
+}
 
 /**
  * Highlight/Markup
@@ -72,7 +107,7 @@ textarea { vertical-align: top; }
  */
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
-pre { background-color: var(--background-color);  border: none;  padding: 0;  margin: 0;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
+pre { background-color: var(--background-color);  border: 1px solid #7EF2B0;  padding: 0;  margin: 0;  overflow:auto;  font-size: $base-font-size*0.8;  color: var(--text-color);  line-height: 1.4 !important;  font-family: $base-font-family !important; }
 .highlight .hll { background-color: var(--code-color-2); }
 .highlight .c { color: var(--code-color-1); font-style: italic } /* Comment */
 .highlight .err { color: var(--code-color-3); background-color: var(--code-color-4); } /* Error */
