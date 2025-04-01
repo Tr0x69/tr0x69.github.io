@@ -5,8 +5,8 @@
  * Style variables
  */
 $base-font-family:     'Roboto Mono', monospace !default;
-$base-font-size:       16px !default;
-$mobile-font-size:     12px !default;
+$base-font-size:       17px !default;
+$mobile-font-size:     11px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  900px !default;
@@ -34,6 +34,11 @@ img {
 /**
  * Global
  */
+
+
+
+
+ 
  body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
  h1 { font-size: $base-font-size * 1.6;  margin: 0px;  margin-top: 30px;  font-weight: bold;  color: var(--text-color); }
  h2 { font-size: $base-font-size * 1.4;  margin: 0px;  margin-top: 28px;  font-weight: bold;  color: var(--text-color); }
@@ -56,10 +61,12 @@ footer { margin-bottom: 20px; }
 
 
 
+
+
 code.highlighter-rouge {
     background-color: #334036;
-    padding: 0.1em 0.2em;
-    border-radius: 3px;
+    padding: 0.1em 0.1em;
+    border-radius: 5px;
     font-size: 0.85em;
     font-family: $base-font-family;
     border: 1px solid rgba(126, 242, 176, 0.3);
@@ -107,7 +114,7 @@ textarea { vertical-align: top; }
  */
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
-pre { background-color: var(--background-color);  border: 1px solid #7EF2B0;  padding: 0;  margin: 0;  overflow:auto;  font-size: $base-font-size*0.8;  color: var(--text-color);  line-height: 1.4 !important;  font-family: $base-font-family !important; }
+pre { background-color: var(--background-color);  border: 1px solid #7EF2B0;  padding: 0;  margin: 0 0 15px 0;  overflow:auto;  font-size: $base-font-size*0.8;  color: var(--text-color);  line-height: 1.4 !important;  font-family: $base-font-family !important; }
 .highlight .hll { background-color: var(--code-color-2); }
 .highlight .c { color: var(--code-color-1); font-style: italic } /* Comment */
 .highlight .err { color: var(--code-color-3); background-color: var(--code-color-4); } /* Error */

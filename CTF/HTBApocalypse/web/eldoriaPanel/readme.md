@@ -202,7 +202,7 @@ $app->post('/api/admin/appSettings', function (Request $request, Response $respo
 
 Set up an FTP server and create a malicious file with the same name as one of the template files used by the application.
 
-https://pypi.org/project/pyftpdlib/
+[https://pypi.org/project/pyftpdlib/](https://pypi.org/project/pyftpdlib/)
 
 ```python
 from pyftpdlib.authorizers import DummyAuthorizer

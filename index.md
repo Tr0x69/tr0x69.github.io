@@ -14,3 +14,7 @@ permalink: /
 <br>
 
 - [CTF Challenges](/ctf/) - Collection of my CTF writeups
+
+<br>
+
+- [Analysis](/analysis/) - Collection of my analysis
