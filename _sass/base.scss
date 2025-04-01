@@ -173,3 +173,55 @@ pre { background-color: var(--background-color);  border: 1px solid #7EF2B0;  pa
 .highlight .vg { color: var(--code-color-7); } /* Name.Variable.Global */
 .highlight .vi { color: var(--code-color-7); } /* Name.Variable.Instance */
 .highlight .il { color: var(--code-color-14); } /* Literal.Number.Integer.Long */
+.language-xml .nt, 
+.highlight .nt { 
+  color: #e83e8c; /* Pink/Magenta color for tags */
+}
+
+/* XML Attributes */
+.language-xml .na, 
+.highlight .na { 
+  color: #6f42c1; /* Purple color for attributes */
+}
+
+/* XML Strings */
+.language-xml .s, 
+.language-xml .s1, 
+.language-xml .s2 { 
+  color: #28a745; /* Green color for strings */
+}
+
+/* XML Comments */
+.language-xml .c, 
+.language-xml .c1, 
+.language-xml .cm { 
+  color: #6c757d; 
+  font-style: italic; 
+}
+
+/* XML Processing Instructions */
+.language-xml .pi { 
+  color: #fd7e14; /* Orange color for processing instructions */
+}
+
+/* CDATA Sections */
+.language-xml .cd, 
+.highlight .cd { 
+  color: #17a2b8; /* Cyan/Teal color for CDATA */
+  font-style: italic;
+  background-color: rgba(23, 162, 184, 0.1); /* Light background to highlight CDATA */
+  padding: 0 3px;
+}
+
+/* Entities in XML */
+.language-xml .ent, 
+.highlight .ent { 
+  color: #007bff; /* Blue color for entities */
+}
+
+/* Declarations, DOCTYPE, etc. */
+.language-xml .cp,
+.highlight .cp { 
+  color: #fd7e14; /* Orange color for declarations */
+  font-weight: bold;
+}
