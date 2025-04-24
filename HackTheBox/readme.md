@@ -10,6 +10,10 @@ permalink: /hackthebox/
 
 <br>
 
+### Easy Challenges
+
+
+
 - [HTB - E.Tree](/hackthebox/etree/) 
 - [HTB - Emoji Voting](/hackthebox/emojiVoting/)
 - [HTB - Saturn](/hackthebox/saturn/) 
@@ -19,3 +23,8 @@ permalink: /hackthebox/
 - [HTB - Haunt Mart](/hackthebox/hauntmart/) 
 - [HTB - Pumpkin Spice](/hackthebox/pumpkinspice/) 
 - [HTB - HTBank](/hackthebox/htbank/) 
+
+
+### Medium Challenges
+
+- [HTB - Stylish](/hackthebox/stylish/) 
