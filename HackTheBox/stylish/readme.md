@@ -331,3 +331,9 @@ for i in range(1, 100):
     
 
 ```
+
+
+## ***I’ve Learned***
+
+💡CSS Based Attack fontface
+💡Blind Sqlite Injection
