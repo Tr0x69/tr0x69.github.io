@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tr0x69.github.io/sitemap.xml

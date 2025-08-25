@@ -27,7 +27,7 @@ const {challenge} = Astro.props;
 const { Content, headings } = await challenge.render();
 ---
 
-<MarkDownLayOut>
+<MarkDownLayOut title={challenge.data.title}>
   <Fragment slot="title">{challenge.data.title}</Fragment>
   
   <Prose>

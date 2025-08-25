@@ -2,12 +2,14 @@
 import "../styles/global.css";
 import Navbar from "../components/navbar.astro";
 import Footer from "../components/Footer.astro";
+
+const {title} = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title><slot name="title" /></title>
+    <title>{title}</title>
   </head>
   <body class="bg-neutral-900 text-white min-h-screen grid grid-rows-[auto_1fr_auto]">
     <!-- Navbar -->
