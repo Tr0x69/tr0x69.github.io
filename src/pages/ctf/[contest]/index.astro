@@ -1,0 +1,28 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import PostList from '../../../components/PostList.astro';
+export async function getStaticPaths() {
+  // Collect all contests from your challenges collection
+  const challenges = await getCollection('challenges');
+  const contests = [...new Set(challenges.map(c => c.data.contest))];
+
+  return contests.map(contest => ({
+    params: { contest },
+    props: {
+        challenges: challenges.filter(c=> c.data.contest === contest),
+        contestName: contest 
+    }
+  }));  
+}
+
+const { challenges, contestName } = Astro.props;
+
+// // Helper function (có thể move ra utils file)
+// const getChallengeSlug = (slug) => slug.split('/').pop() || '';
+---
+
+<Layout>
+  <!-- <h1 class="text-2xl mt-10 mb-6 border-b border-white pb-4">{contestName.toUpperCase()} CTF</h1> -->
+  <PostList posts={challenges} />
+</Layout>

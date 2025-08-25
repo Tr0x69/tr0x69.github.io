@@ -1,0 +1,22 @@
+---
+
+import Layout from "../../layouts/Layout.astro"
+import { getCollection } from "astro:content";
+import ChallengeList from "../../components/ChallengeList.astro";
+import Challenge from "./[contest]/[challenge].astro";
+const challenges = await getCollection("challenges");
+
+---
+
+
+<Layout>
+  <div class="flex w-full">
+    <!-- Main content column -->
+    <div class="flex flex-col flex-1">
+    <h1 class="text-2xl mt-10 mb-6 border-b border-white pb-4">CTF History</h1>
+    <ChallengeList challenges={challenges} />
+    </div>
+  </div>
+</Layout>
+
+

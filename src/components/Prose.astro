@@ -1,0 +1,55 @@
+---
+---
+<div
+  class="prose dark:prose-invert
+  prose-h1:font-bold prose-h1:text-xl 
+  prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
+  prose-code-blocks
+  prose-headings:text-[#80FFBA]!
+  max-w-none w-full"> 
+  <slot />
+</div>
+
+<style>
+.prose {
+  font-family: 'Roboto Mono', monospace;
+  color: #e2e2e2;
+  font-size: 0.8rem !important;
+  width: 100%;
+  text-align: justify;
+}
+  /* Code block styling */
+  .prose-code-blocks :global(pre) {
+    background-color: #1f2937;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+  /* Inline code styling - target code that's NOT inside pre */
+  .prose-code-blocks :global(code:not(pre code)) {
+    background-color: #303d34;
+    color: #7ffeb9;
+    padding: 0.125rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+  /* Make pre code inherit the syntax highlighting colors and font */
+  .prose-code-blocks :global(pre code) {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.8rem;
+    font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  .prose-code-blocks :global(code:not(pre code))::before,
+  .prose-code-blocks :global(code:not(pre code))::after {
+  content: none !important;
+}
+
+  
+</style>

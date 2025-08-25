@@ -1,0 +1,44 @@
+---
+
+const {challenges} = Astro.props;
+
+function etaMinute(content){
+    if(!content) return 1;
+
+    const wordsPerMinute = 225;
+    const words = content.split(/\s+/).length;
+    const minutes = Math.ceil(words / wordsPerMinute);
+    return Math.max(1, minutes);
+}
+---
+
+<div class="space-y-4">
+  {challenges.map(challenge => (
+    <div class="rounded-xl border border-neutral-800 bg-neutral-900 p-4 hover:border-accent transition">
+      <div class="flex flex-col gap-2">
+        <!-- Title -->
+        <a href={`/ctf/${challenge.data.contest}`} class="text-lg hover:text-accent">
+          {challenge.data.contest.toUpperCase()}
+        </a>
+        <!-- Date -->
+        <p class="text-sm text-neutral-400">
+          {challenge.data.publishedAt.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
+        </p>
+        <!-- Description -->
+        {/* <p class="text-sm text-neutral-300">
+          {post.data.description}
+        </p> */}
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mt-2">
+         
+            <span class="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded-full border border-neutral-700 text-[#80FFBA]!">
+              {etaMinute(challenge.body || challenge.data.description || challenge.data.content)} min read
+            </span>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  ))}
+</div>

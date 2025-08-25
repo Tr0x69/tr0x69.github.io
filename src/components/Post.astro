@@ -1,0 +1,32 @@
+
+---
+
+
+const {post} = Astro.props;
+---
+
+
+<div class="rounded-xl border border-neutral-800 bg-neutral-900 p-4 hover:border-accent transition">
+      <div class="flex flex-col gap-2">
+        <!-- Title -->
+        <a href={`/ctf/${post.slug}`} class="text-lg hover:text-accent">
+          {post.data.title}
+        </a>
+        <!-- Date -->
+        <p class="text-sm text-neutral-400">
+          {post.data.publishedAt.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
+        </p>
+        <!-- Description -->
+        {/* <p class="text-sm text-neutral-300">
+          {post.data.description}
+        </p> */}
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mt-2">
+          {post.data.tags && post.data.tags.map(tag => (
+            <span class="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded-full border border-neutral-700">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>

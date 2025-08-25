@@ -1,0 +1,59 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import Prose from "../../../components/Prose.astro";
+import MarkDownLayOut from "../../../layouts/MarkDownLayout.astro";
+import { render } from "astro:content";
+export async function getStaticPaths() {
+  // Collect all contests from your challenges collection
+  const challenges = await getCollection("challenges");
+
+  
+
+  return challenges.map((challenge) => ({
+    params: {
+        contest: challenge.slug.split("/")[0],
+        challenge: challenge.slug.split("/")[1]
+    },
+    props: {
+      challenge: challenge
+    }
+  }));
+
+  
+}
+const {challenge} = Astro.props;
+const { Content, headings } = await challenge.render();
+---
+
+<MarkDownLayOut>
+  <Fragment slot="title">{challenge.data.title}</Fragment>
+  
+  <Prose>
+    <Content />
+  </Prose>
+
+  <Fragment slot="toc">
+    <div class="text-sm">
+      <h3 class="font-semibold text-white mb-4 text-base">Table of Contents</h3>
+      <nav class="space-y-1">
+        {headings.map((heading) => (
+          <a
+            href={`#${heading.slug}`}
+            class={`block text-gray-400 hover:text-white  transition-colors duration-200 leading-relaxed ${
+              heading.depth === 1 ? 'font-medium text-gray-300' : 
+              heading.depth === 2 ? 'pl-3 text-sm' :
+              heading.depth === 3 ? 'pl-5 text-xs' :
+              heading.depth === 4 ? 'pl-7 text-xs' : 'pl-9 text-xs'
+            }`}
+          >
+            {heading.text}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </Fragment>
+</MarkDownLayOut>
+
+

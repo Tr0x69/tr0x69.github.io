@@ -1,0 +1,32 @@
+
+<!-- Layout 1: Regular Layout - CSS GRID -->
+---
+import "../styles/global.css";
+import Navbar from "../components/navbar.astro";
+import Footer from "../components/Footer.astro";
+const currentYear = new Date().getFullYear();
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><slot name="title" /></title>
+  </head>
+  <body class="bg-neutral-900 text-white min-h-screen grid grid-rows-[auto_1fr_auto]">
+    <!-- Navbar -->
+    <div class="max-w-4xl mx-auto px-6 pt-8 w-full">
+      <Navbar />
+    </div>
+
+    <!-- Main content -->
+    <div class="max-w-3xl mx-auto px-6 pt-6 w-full">
+      <main class="flex flex-col gap-8">
+        <slot />
+        <slot name="toc" />
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <Footer />
+  </body>
+</html>
