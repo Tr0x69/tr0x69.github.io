@@ -21,19 +21,19 @@ Let's start with the `login` page. First, we need register an account and log in
 
 `/`
 
-![EldoriaPanel Login Screen](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image1.png?token=GHSAT0AAAAAACV5LZNHSQGC2XT6FXB3IIJI2FPKRZQ)
+![EldoriaPanel Login Screen](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image1.png)
 
 <br>
 
 `/dashboard`
 
-![EldoriaPanel Login Screen](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image.png?token=GHSAT0AAAAAACV5LZNH27MPKV2W6DJKJVTM2FPKRIQ)
+![EldoriaPanel Login Screen](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image.png)
 
 <br>
 
 `/claim_quest`
 
-![EldoriaPanel Login Screen](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image2.png?token=GHSAT0AAAAAACV5LZNGHHO7C42OWVZEBWQI2FPKSGA)
+![EldoriaPanel Login Screen](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image2.png)
 
 <br>
 
@@ -270,13 +270,13 @@ Then host a malicious file that change the template path to the file that we hos
 
 <br>
 
-![setupngrok](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image3.png?token=GHSAT0AAAAAACV5LZNGPQZJI2VAIMCXTKZY2FPKSOQ)
+![setupngrok](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image3.png)
 
 <br>
 
-![sendpost](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image4.png?token=GHSAT0AAAAAACV5LZNHQQ57XCJ2U74F6VRW2FPKSZA)
+![sendpost](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image4.png)
 
 
 <br>
 
-![flag](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image5.png?token=GHSAT0AAAAAACV5LZNGBEPQ7GTJDVE6NE3I2FPKS6Q)
+![flag](https://raw.githubusercontent.com/Tr0x69/old-tr0x69/refs/heads/main/assets/images/htbapocalypse/image5.png)
